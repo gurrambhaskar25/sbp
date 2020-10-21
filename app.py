@@ -16,4 +16,4 @@ def spb_predictor():
     return render_template('index.html',prediction_text='Your Normal Systolic Blood Pressure Should be {}'.format(prediction))
 if __name__ == "__main__":
     
-    app.run(host='0.0.0.0', port=8080)
+    app.run(hot='sbp1325.herokuapp.com', port=8080)
