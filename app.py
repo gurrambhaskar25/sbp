@@ -15,4 +15,5 @@ def spb_predictor():
     prediction =int( model.predict(final_features)[0][0])
     return render_template('index.html',prediction_text='Your Normal Systolic Blood Pressure Should be {}'.format(prediction))
 if __name__ == "__main__":
-    app.run(debug=True)
+    
+    app.run(host='0.0.0.0', port=8080)
