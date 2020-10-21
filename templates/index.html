@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Systolic Blood Pressure</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+</head>
+
+<body>
+<h1>Systolic Blood Pressure</h1>
+<div class="login">
+    <form action ="/predict" method="post">
+      <input type="text" name="age" placeholder="Age in Years" required="required" />
+      <input type="text" name="weight" placeholder="weight in pounds" required="required" />
+      <button type="submit" class="btn-large waves-effect waves-light orange">Predict</button>
+    </form>
+      <br>
+      <br>
+      {{prediction_text}}
+
+
+    </div>
+  </body>
+</html>
+
